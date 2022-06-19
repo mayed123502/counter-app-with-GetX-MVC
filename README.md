@@ -7,9 +7,12 @@
                 return GetMaterialApp(
                     getPages: [
                         GetPage(name: name, page: page),
-                        GetPage(name: "pageone", page: () => PageOne()),
+                        GetPage(name: "/pageone", page: () => PageOne()),
                     ],
                  );
+                 
+                 Get.toNamed("/pageone");
+
     
 
 # ___________________________________________________________________________
