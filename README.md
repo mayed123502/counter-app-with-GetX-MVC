@@ -11,7 +11,10 @@
                     ],
                  );
                  
+                 
                  Get.toNamed("/pageone");
+                 Get.offNamed("/pageone");
+
 
     
 
