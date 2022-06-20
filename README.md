@@ -125,8 +125,26 @@
 
            Get.lazyPut(fenix: true);
            
-### ال (fenix: true) بلغي "deleted from memory" بشكل مجازي مش فعلي 
+### ال (fenix: true) بلغي "deleted from memory" بشكل مجازي مش فعلي
+
+
+# __________________________________________________________________
+
            
+# 7 - Dependency Injection ( Bindings )
+
+### ال Bindings بتساعدنا على ترتيب الكود وهي عبارة عن مجموعة من ال Classes + لازم نستخدم معها ال (route management)  الخاص بال GetX وليس الخاص بفلاتر 
+
+# هذا 
+       getPages: [
+           GetPage(name: "/pageone", page: () => const PageOne()),
+           GetPage(name: "/", page: () => Home()),
+         ],
+# وليس هذا 
+
+       routes: [
+           "/home":()=> Home(),
+         ],
 
 
 
