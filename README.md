@@ -164,14 +164,14 @@
 
 
 
-## الطريقة الاولى : عند الانتقال الى صفحة 
+### الطريقة الاولى : عند الانتقال الى صفحة 
 
          getPages: [
              GetPage(name: "/", page: () => HomePage(), binding: HomeBinding()), // here!
            ],
 
 
-## الطريقة التانية : استدعاء الصندوق عند تشغيل التطبيق 
+### الطريقة التانية : استدعاء الصندوق عند تشغيل التطبيق 
 
        GetMaterialApp(
           initialBinding: HomeBinding(), // here!
@@ -185,4 +185,14 @@
 ### بعد ما نعمل Bindings  وحقن بنصل للكنترولر عن طريق ال find
 
       ShoppingController controller = Get.find(); // injected by Get.create
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
   
