@@ -119,4 +119,14 @@
             Get.find();
             
 ###  بنستخدم Get.find في حال استخدام lazyPut 
-### في حال عمل انشاء لل lazyPut ومن ثم الخروج وعمل "deleted from memory" والرجوع مرة أخرى سوف يظهر خطأ والسبب ان lazyPut يتم انشاؤها لمرة واحدة 
+### في حال عمل انشاء لل lazyPut ومن ثم الخروج وعمل "deleted from memory" والرجوع مرة أخرى سوف يظهر خطأ والسبب ان lazyPut يتم انشاؤها لمرة واحدة
+
+
+
+           Get.lazyPut(fenix: true);
+           
+### ال (fenix: true) بلغي "deleted from memory" بشكل مجازي مش فعلي 
+           
+
+
+
