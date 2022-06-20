@@ -103,3 +103,12 @@
 ## ال Dependency Injection باختصار عملية حقن  instance من أحد ال Classes داخل Class أخر
 
            Get.put(CounterController());
+           
+           CounterController _controller = Get.put(CounterController(), permanent: true);
+           
+## ال permanent بلغي قصة ال "deleted from memory" وبحفظ القيم في حالة الخروج من الصفحة 
+           
+           
+
+           
+           
