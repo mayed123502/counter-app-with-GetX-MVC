@@ -25,6 +25,8 @@
 
             CounterController _controller = Get.put(CounterController(), permanent: true);
             
+            Dependency Injection Controller
+            
 ## هان احنا وفرنا كونترولر بنستخدمه داخل ال onPressed لانه عند الضغط على الزر ما راح يتم اعادة بناء ال Widget 
 ## بينما في النص الذي سوف يظهر قيمة ال count بنحتاج تحديث للنص وبالتالي اعادة بناء لل Widget 
              _controller.increment();
@@ -60,9 +62,9 @@
            
 ## بدون الحاجة للميثود update
 
+## ال Obx برضو عشان ال stream بختلف كتير عن ال GetX و GetBuilder بحيث انه ما فيه كنترولر
 
-
-
+            Obx(() => Text("${_controller.count}")),
 
 
 
