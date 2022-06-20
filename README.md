@@ -1,4 +1,5 @@
 # 2 - Route management
+
 ### عمل الروت بيحتاج مني فقط اكون مستبدل ال MaterialApp ب GetMaterialApp
                 Get.off(()=>const PageOne()) 
                 Get.to(() => const PageTow()) 
@@ -17,8 +18,14 @@
 
 
     
+    
+    
 
 # __________________________________________________________________
+
+
+
+
 
 # 4 - State management ( Getx - GetBuilder - Obx )
 
@@ -69,9 +76,19 @@
 
 
 
+
+
 # __________________________________________________________________
 
+
+
+
+
 # 5 - GetBuilder And GetX in Deep
+
+
+
+
 
 ### الفكرة من الدرس انه عند استخدام GetBuilder سوف يتم اعادة بناء ال Widget مرة أخرى عملية Rebuild + عند الخروج من الصفحات الموجود فيها بيانات ومستخدم 
 ### داخلها GetX يتم عمل "deleted from memory" أي يتم حذف قيمة المتغييرات الموجودة
@@ -98,7 +115,14 @@
 # __________________________________________________________________
 
 
+
+
+
 # 6 - Dependency Injection ( Get put - Get find - Get lazyPut )
+
+
+
+
 
 ### ال Dependency Injection باختصار عملية حقن  instance من أحد ال Classes داخل Class أخر
 
@@ -128,10 +152,18 @@
 ### ال (fenix: true) بلغي "deleted from memory" بشكل مجازي مش فعلي
 
 
+
+
+
 # __________________________________________________________________
+
+
 
            
 # 7 - Dependency Injection ( Bindings )
+
+
+
 
 ### ال Bindings بتساعدنا على ترتيب الكود وهي عبارة عن مجموعة من ال Classes + لازم نستخدم معها ال (route management)  الخاص بال GetX وليس الخاص بفلاتر 
 
