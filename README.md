@@ -92,8 +92,14 @@
 
 ## لانه راح يتم استدعاء الميثود update الي راح تروح لكل GetBuilder بتستمع لنفس ال Controller  وتعمل اله Rebuild 
 
+## في حال كان عندي أكثر من  GetX راح يتم عمل Rebuild  ل GetX واحد فقط
 
 
+# __________________________________________________________________
 
 
+# 6 - Dependency Injection ( Get put - Get find - Get lazyPut )
 
+## ال Dependency Injection باختصار عملية حقن  instance من أحد ال Classes داخل Class أخر
+
+           Get.put(CounterController());
