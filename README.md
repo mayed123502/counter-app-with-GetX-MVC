@@ -164,7 +164,7 @@
 
 
 
-## الطريقة الاولى 
+## الطريقة الاولى : عند الانتقال الى صفحة 
 
          getPages: [
              GetPage(name: "/", page: () => HomePage(), binding: HomeBinding()), // here!
@@ -176,4 +176,13 @@
        GetMaterialApp(
           initialBinding: HomeBinding(), // here!
          );
+### الطريقة الثالثة : 
+
+       onPressed: () {
+          Get.to(() => const PageTow(),binding: MyBindings());
+            },
+         
+### بعد ما نعمل Bindings  وحقن بنصل للكنترولر عن طريق ال find
+
+      ShoppingController controller = Get.find(); // injected by Get.create
   
