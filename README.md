@@ -37,3 +37,38 @@
                 
             GetX<CounterController>(
                 builder: (controller) => Text("${controller.count}")),
+                
+ ## الفرق بين ال GetBuilder وال GetX انه ال GetX بتتعامل مع ال stream (تدفق البيانات )
+
+
+
+
+            RxInt count = 0.obs;
+
+ ## ال obs يعني حيلاحظ التغييرات الي راح تحصل لما نزيد العداد
+ 
+           RxInt count = 0.obs;
+
+           increment() {
+             count++;
+            }
+
+          decrement() {
+            count--;
+           }
+           
+           
+## بدون الحاجة للميثود update
+
+
+
+
+
+
+
+
+
+
+
+
+
