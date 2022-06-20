@@ -148,3 +148,32 @@
 
 
 
+### حتى نفهم موضوع ال Bindings بشكل منيح نتخيل ال Bindings عبارة عن صندوق وداخل هذا الصندوق بحتوى على مجموعة من الانستنس الي بتم عمل حقن الها ولكن هذه الانستنس ### ما راح يتم حقنها الا لما استدعي الصندوق 
+
+
+       class HomeBinding implements Bindings {
+          @override
+          void dependencies() {
+          Get.put<Controller1>(Controller1());
+          Get.put<Controller2>(Controller2());
+               }
+            }
+  
+
+### يوجد عدة طرق لاستدعاء الصندوق 
+
+
+
+## الطريقة الاولى 
+
+         getPages: [
+             GetPage(name: "/", page: () => HomePage(), binding: HomeBinding()), // here!
+           ],
+
+
+## الطريقة التانية : استدعاء الصندوق عند تشغيل التطبيق 
+
+       GetMaterialApp(
+          initialBinding: HomeBinding(), // here!
+         );
+  
