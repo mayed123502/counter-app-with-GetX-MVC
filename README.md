@@ -220,9 +220,33 @@
       
       
       
+# __________________________________________________________________
+
       
       
-      
+# 8 - Controller’s lifecycle
+    
+    
+       class CounterController extends GetxController {
+          @override
+          void onInit() {
+            // => initstate
+            super.onInit();
+             }
+
+         @override
+         void onReady() {
+           // run after building Widget
+            super.onReady();
+            }
+
+         @override
+         void onClose() {
+         // When you leave the page
+          super.onClose();
+        }
+       }
+
       
       
       
